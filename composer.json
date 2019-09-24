@@ -1,5 +1,5 @@
 {
-  "name" : "zoa-chou/xhprof-collector",
+  "name" : "tinson/xhprof-collector",
   "type": "library",
   "description" : "Single XHProf collector use XHProf API",
   "keywords": ["xhprof","collector"],

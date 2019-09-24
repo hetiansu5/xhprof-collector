@@ -159,7 +159,7 @@ if (!defined('_XHGUI_INIT')) {
                         $uriInfo['pass'],
                         $uriInfo['host'],
                         isset($uriInfo['port']) ? $uriInfo['port'] : 27017,
-                        $dbName,
+                        'admin', //密码认证只能在选择admin数据库下（在mongodb 3.6.3版本测试）
                         http_build_query($queryInfo)
                     );
                 } else {
