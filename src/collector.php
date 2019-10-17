@@ -149,7 +149,9 @@ if (!defined('_XHGUI_INIT')) {
                 // if connect timeout not set
                 if (!isset($queryInfo['connectTimeoutMS'])) {
                     $queryInfo['connectTimeoutMS'] = 1000;
-                }
+                } else {
+		    $queryInfo['connectTimeoutMS'] = intval($queryInfo['connectTimeoutMS']);
+		}
                 $dbName = substr($uriInfo['path'],1);
                 if (isset($uriInfo['user']) && $uriInfo['user']) {
                     $mongoUri = sprintf(
